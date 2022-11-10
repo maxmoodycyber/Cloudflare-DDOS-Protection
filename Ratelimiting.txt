@@ -1,0 +1,7 @@
+This will ratelimit any attackers that are spamming requests on your website. I highly recommend this.
+
+Setup:
+1] Create a ratelimiting rule
+2] Set the action to either block or managed challenge (I use block personally)
+3] Set the duration to 10 seconds. Any more isn't really needed
+4] Set it so it triggers on your hostname (https://cdn.discordapp.com/attachments/994591128517099564/1040340104151048222/image.png)

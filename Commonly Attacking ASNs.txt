@@ -1,0 +1,39 @@
+----------------------------------STRESSER1-------------------------------------
+AS14061 - DIGITALOCEAN-ASN
+AS16276 - OVH
+AS7713 - TELKOMNET-AS-AP PT Telekomunikasi Indonesia
+AS45758 - TTBP-AS-AP Triple T Broadband Public Company Limited
+AS45102 - ALIBABA-CN-NET Alibaba US Technology Co., Ltd.
+AS16509 - AMAZON-02
+AS4134 - CHINANET-BACKBONE No.31,Jin-rong Street
+AS12552 - IPO-EU
+AS23969 - TOT-NET TOT Public Company Limited
+AS208006 - SOFTQLOUD-AS AS49544 i3D
+-----------------------------------STRESSER2------------------------------------
+AS14061 - DIGITALOCEAN-ASN
+AS54252 - SP-NYJ
+AS36352 - AS-COLOCROSSING
+AS44592 - SKYLINK
+AS16276 - OVH
+AS54825 - PACKET
+AS45758 - TTBP-AS-AP Triple T Broadband Public Company Limited
+AS24940 - HETZNER-AS
+AS45102 - ALIBABA-CN-NET Alibaba US Technology Co., Ltd.
+AS7713 - TELKOMNET-AS-AP PT Telekomunikasi Indonesia
+AS262186 - TV AZTECA SUCURSAL COLOMBIA
+AS4134 - CHINANET-BACKBONE No.31,Jin-rong Street
+--------------------------------------------------------------------------------
+
+
+
+HOW TO IMPLEMENT IN CLOUDFLARE:
+1] Create a firewall rule for blocking ASNs (https://cdn.discordapp.com/attachments/994591128517099564/1040335895808708719/image.png)
+2] Click edit expression (https://cdn.discordapp.com/attachments/994591128517099564/1040336100318781550/image.png)
+3] Paste the blocklist below into the box (https://cdn.discordapp.com/attachments/994591128517099564/1040337365987754075/image.png)
+4] Set the firewall action to block (
+4] Save the rule.
+
+By doing this some common ASNs I picked up that are commonly used for DDoS attacks will be blocked on your WAF. It is recommended you update the list with any ASNs you notice attacking your website at a later date.
+
+BLOCKLIST:
+(ip.geoip.asnum eq 14061) or (ip.geoip.asnum eq 16276) or (ip.geoip.asnum eq 771) or (ip.geoip.asnum eq 45758) or (ip.geoip.asnum eq 45102) or (ip.geoip.asnum eq 45102) or (ip.geoip.asnum eq 4134) or (ip.geoip.asnum eq 12552) or (ip.geoip.asnum eq 23969) or (ip.geoip.asnum eq 208006) or (ip.geoip.asnum eq 14061) or (ip.geoip.asnum eq 14061) or (ip.geoip.asnum eq 14061) or (ip.geoip.asnum eq 44592) or (ip.geoip.asnum eq 16276) or (ip.geoip.asnum eq 54825) or (ip.geoip.asnum eq 45758) or (ip.geoip.asnum eq 45758) or (ip.geoip.asnum eq 45102) or (ip.geoip.asnum eq 7713) or (ip.geoip.asnum eq 262186) or (ip.geoip.asnum eq 4134)

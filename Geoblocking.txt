@@ -1,0 +1,10 @@
+Geoblocking adds a huge layer of protection to your website but it also has the drawback of blocking access from some countries. I recommend implementing it then removing the blocks on countries which you care about.
+
+Setup:
+1] Create firewall rule as seen in the ASN blocking section of this github.
+2] Paste the blocklist below into the expression page
+3] Set the firewall action to block
+4] Save and edit the rules to your liking.
+
+Blocklist:
+(ip.geoip.country eq "AF") or (ip.geoip.country eq "AX") or (ip.geoip.country eq "AL") or (ip.geoip.country eq "DZ") or (ip.geoip.country eq "BD") or (ip.geoip.country eq "BR") or (ip.geoip.country eq "CN") or (ip.geoip.country eq "EG") or (ip.geoip.country eq "IN") or (ip.geoip.country eq "IL") or (ip.geoip.country eq "TR") or (ip.geoip.country eq "T1") or (ip.geoip.country eq "ID") or (ip.geoip.country eq "SG") or (ip.geoip.country eq "HK") or (ip.geoip.country eq "CZ") or (ip.geoip.country eq "JP") or (ip.geoip.country eq "KP") or (ip.geoip.country eq "KR") or (ip.geoip.country eq "AM") or (ip.geoip.country eq "RU") or (ip.geoip.country eq "RS") or (ip.geoip.country eq "EC") or (ip.geoip.country eq "ZA") or (ip.geoip.country eq "CO") or (ip.geoip.country eq "VN") or (ip.geoip.country eq "AR") or (ip.geoip.country eq "LA") or (ip.geoip.country eq "PE") or (ip.geoip.country eq "JO") or (ip.geoip.country eq "IQ") or (ip.geoip.country eq "SY") or (ip.geoip.country eq "HU") or (ip.geoip.country eq "TW") or (ip.geoip.country eq "MY") or (ip.geoip.country eq "T1") or (ip.geoip.country eq "NP") or (ip.geoip.country eq "PH") or (ip.geoip.country eq "HR") or (ip.geoip.country eq "MG") or (ip.geoip.country eq "PK") or (ip.geoip.country eq "IN") or (ip.geoip.country eq "XX")

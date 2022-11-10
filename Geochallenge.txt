@@ -1,0 +1,10 @@
+This will send a captcha/challenge to these specific regions when they access your website. Super useful as either an alternative to geoblocking or as a second line of defence.
+
+Setup:
+1] Create a firewall rule
+2] Paste the blocklist below into the expressions
+3] Edit to your liking
+4] Set the firewall action to either legacy captcha or managed challenge (either should work)
+
+Blocklist:
+(ip.geoip.country eq "CA") or (ip.geoip.country eq "US") or (ip.geoip.country eq "GB") or (ip.geoip.country eq "FI") or (ip.geoip.country eq "NL") or (ip.geoip.country eq "AN") or (ip.geoip.country eq "PL")
