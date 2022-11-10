@@ -15,6 +15,10 @@ Geochallenge - Challenges users from specific countries. This is another one I r
 Ratelimiting - Blocks IP addresses that are spamming requests. This basically has no drawbacks unless you are protecting a website which needs users to spam requests so use this 100%!
 
 [GEOCHALLENGE](https://github.com/maxmoodycyber/Cloudflare-DDOS-Protection/files/9983923/Geochallenge.txt)
+
 [RATELIMITING](https://github.com/maxmoodycyber/Cloudflare-DDOS-Protection/files/9983924/Ratelimiting.txt)
+
 [ASN BLOCKING](https://github.com/maxmoodycyber/Cloudflare-DDOS-Protection/files/9983925/Commonly.Attacking.ASNs.txt)
+
 [GEOBLOCKING](https://github.com/maxmoodycyber/Cloudflare-DDOS-Protection/files/9983926/Geoblocking.txt)
+
