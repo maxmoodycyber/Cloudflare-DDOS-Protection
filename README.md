@@ -3,7 +3,7 @@ Ways to protect your website via Cloudflare through ASN blocking, geoblocking an
 
 It is recommended you at least follow the Geochallenge section and the Ratelimiting sections to give yourself some protection but if you want your site to be completely protected follow Geoblocking and ASN Blocking too.
 
-
+Any recommendations or additions to this would by highly appreciated as this is a topic I am still actively researching :)
 
 
 ASN Blocking - Blocks common DDoSing ASNs. The drawback of this is there is a chance (the chance is low) of users accessing your website being blocked due to them using the same ASN as these DDoSing services.
